@@ -37,7 +37,7 @@ for i in getlist()['data']['result']:
     print n
     if n == u'有'or int(n) > 0:
         print '有余票,可以下单'
-        print send_tel('13518200976')
+        print send_tel('1351*******') //your phonenum
         break
             #with open('1.txt','a') as fn:
             #fn.write(n.encode('gbk')+'\n')
