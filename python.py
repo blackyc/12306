@@ -1,6 +1,6 @@
 # -*- coding:utf-8 -*-
 
-import urllib2
+import urllib2   
 import ssl
 from cons import *
 import json
@@ -14,8 +14,8 @@ for i in city_name.split('@'):
 ssl._create_default_https_context = ssl._create_unverified_context
 
 train_date = '2017-05-10'
-from_city = '长沙'
-to_city = '成都'
+from_city = # for a city name  ex:  '长沙'
+to_city = #  ex:   '成都'
 from_station = city[from_city]
 to_station = city[to_city]
 
@@ -37,7 +37,7 @@ for i in getlist()['data']['result']:
     print n
     if n == u'有'or int(n) > 0:
         print '有余票,可以下单'
-        print send_tel('1351*******') //your phonenum
+        print send_tel('1351*******') //your phone num    this is a API for alidayu 
         break
-            #with open('1.txt','a') as fn:
-            #fn.write(n.encode('gbk')+'\n')
+            #with open('1.txt','a') as fn:      # You need to climb down all the cities in 12306 miles.  i test it for 28
+            #fn.write(n.encode('gbk')+'\n')     # 
